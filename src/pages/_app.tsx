@@ -1,9 +1,16 @@
 // import App from "next/app";
-import type { AppProps /*, AppContext */ } from 'next/app'
-import '../styles/globals.css'
+import type { AppProps /*, AppContext */ } from 'next/app';
+import React from 'react';
+import Heading from '../components/Heading';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <div className="h-screen divide-y-2 divide-white divide-opacity-60">
+      <Heading />
+      <Component {...pageProps} />
+    </div>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for
