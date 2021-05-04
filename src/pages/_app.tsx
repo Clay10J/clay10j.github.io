@@ -1,13 +1,15 @@
 // import App from "next/app";
-import type { AppProps /*, AppContext */ } from 'next/app';
-import React from 'react';
-import Heading from '../components/Heading';
-import '../styles/globals.css';
+import type { AppProps /*, AppContext */ } from "next/app";
+import React from "react";
+import Heading from "../components/Heading";
+import Skills from "../components/Skills";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="h-screen divide-y-2 divide-white divide-opacity-60">
+    <div className="h-screen p-4 divide-y-2 divide-white divide-opacity-60">
       <Heading />
+      <Skills />
       <Component {...pageProps} />
     </div>
   );
@@ -25,4 +27,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 //   return { ...appProps }
 // }
 
-export default MyApp
+export default MyApp;
