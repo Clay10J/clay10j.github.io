@@ -54,7 +54,7 @@ const EXPERIENCES: ReadonlyArray<WorkExperience> = [
 export default function Experience() {
   return (
     <div className="container mx-auto my-10">
-      <h1 className="m-4 text-xl md:text-5xl">Work Experience</h1>
+      <h1 className="mx-4 mt-8 mb-4 text-xl md:text-5xl">Work Experience</h1>
       <div>
         {EXPERIENCES.map((exp: WorkExperience) => {
           return (
