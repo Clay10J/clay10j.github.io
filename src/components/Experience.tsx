@@ -62,7 +62,7 @@ export default function Experience() {
               key={exp.company}
               className="grid grid-cols-1 m-4 md:grid-cols-2 justify-items-center md:justify-items-start"
             >
-              <h2 className="m-1 text-xl text-center md:mx-4 md:my-2 md:text-2xl">
+              <h2 className="m-1 text-xl text-center md:text-left md:mx-4 md:my-2 md:text-2xl">
                 {exp.company}
               </h2>
               <h2 className="m-1 text-base md:mx-4 md:my-2 md:text-2xl md:justify-self-end">
@@ -70,7 +70,7 @@ export default function Experience() {
               </h2>
               {exp.jobs.map((job: Job) => {
                 return (
-                  <div key={exp.company + "-" + job.start_date}>
+                  <React.Fragment key={exp.company + "-" + job.start_date}>
                     <h3 className="m-1 text-base md:mx-4 md:my-2 md:text-xl">
                       {job.job_title}
                     </h3>
@@ -94,7 +94,7 @@ export default function Experience() {
                         );
                       })}
                     </ul>
-                  </div>
+                  </React.Fragment>
                 );
               })}
             </div>
