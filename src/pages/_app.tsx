@@ -2,6 +2,7 @@
 import type { AppProps /*, AppContext */ } from "next/app";
 import Head from "next/head";
 import React from "react";
+import Socials from "../components/Socials";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -34,7 +35,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           />
         </noscript>
       </Head>
-      <div className="h-screen p-4 divide-y-2 divide-white divide-opacity-60">
+      <div className="fixed p-2 space-y-3 top-8">
+        <Socials />
+      </div>
+      <div className="p-4 divide-y-2 divide-white divide-opacity-60">
         <Component {...pageProps} />
       </div>
     </>
