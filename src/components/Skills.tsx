@@ -7,16 +7,28 @@ export default function Skills() {
     <div className="container mx-auto my-10">
       <h1 className="mx-4 mt-8 mb-4 text-xl md:text-5xl">Skills</h1>
       <div className="grid grid-cols-2 px-2 justify-items-center md:grid-cols-4">
-        <DiPython className="w-16 h-16 m-1 md:h-36 md:w-36" title="python" />
-        <DiReact className="w-16 h-16 m-1 md:h-36 md:w-36" title="react" />
-        <DiJavascript1
-          className="w-16 h-16 m-1 md:h-36 md:w-36"
-          title="javascript"
-        />
-        <SiPowershell
-          className="w-16 h-16 m-1 md:h-36 md:w-36"
-          title="powershell"
-        />
+        <div>
+          <DiPython className="w-16 h-16 m-1 md:h-36 md:w-36" title="python" />
+          <h2 className="text-lg text-center md:text-2xl">Python</h2>
+        </div>
+        <div>
+          <DiReact className="w-16 h-16 m-1 md:h-36 md:w-36" title="react" />
+          <h2 className="text-lg text-center md:text-2xl">ReactJs</h2>
+        </div>
+        <div>
+          <DiJavascript1
+            className="w-16 h-16 m-1 md:h-36 md:w-36"
+            title="javascript"
+          />
+          <h2 className="text-lg text-center md:text-2xl">JavaScript</h2>
+        </div>
+        <div>
+          <SiPowershell
+            className="w-16 h-16 m-1 md:h-36 md:w-36"
+            title="powershell"
+          />
+          <h2 className="text-lg text-center md:text-2xl">PowerShell</h2>
+        </div>
       </div>
     </div>
   );
