@@ -8,12 +8,12 @@ export default function Socials() {
   return (
     <>
       <div>
-        <a href={GITHUB_LINK}>
+        <a href={GITHUB_LINK} target="_blank">
           <FaGithub className="w-5 h-5 md:w-8 md:h-8" title="GitHub" />
         </a>
       </div>
       <div>
-        <a href={LINKEDIN_LINK}>
+        <a href={LINKEDIN_LINK} target="_blank">
           <FaLinkedin className="w-5 h-5 md:w-8 md:h-8" title="LinkedIn" />
         </a>
       </div>
