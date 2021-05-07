@@ -2,7 +2,7 @@ import React from "react";
 
 const NAME = "Clayton Joseck";
 const JOB_TITLE = "Software Engineer";
-const LOCATION = "Kansas City, Missouri";
+const LOCATION = "United States";
 
 export default function Heading() {
   return (

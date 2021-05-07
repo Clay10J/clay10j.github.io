@@ -27,7 +27,7 @@ const EXPERIENCES: ReadonlyArray<WorkExperience> = [
           "Own several tools/processes created by DevSecOps team",
           "Applied solutions across various operating systems and architectures",
           "Saved system engineers/owners countless work hours by creating automation tool for scanning server settings",
-          "Developed multiple website front-ends using ReactJS",
+          "Developed multiple website front-ends using ReactJs",
           "Configuration management",
         ],
       },
@@ -71,7 +71,7 @@ export default function Experience() {
               {exp.jobs.map((job: Job) => {
                 return (
                   <React.Fragment key={exp.company + "-" + job.start_date}>
-                    <h3 className="m-1 text-base md:mx-4 md:my-2 md:text-xl">
+                    <h3 className="m-1 text-base italic md:mx-4 md:my-2 md:text-xl">
                       {job.job_title}
                     </h3>
                     <h3 className="m-1 text-base md:mx-4 md:my-2 md:text-xl md:justify-self-end">

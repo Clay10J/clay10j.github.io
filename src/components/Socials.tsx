@@ -21,7 +21,7 @@ export default function Socials() {
         <a href="">
           <FaFileDownload
             className="w-5 h-5 md:w-8 md:h-8"
-            title="Resume Download"
+            title="Download My Resume"
           />
         </a>
       </div>
