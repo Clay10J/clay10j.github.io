@@ -64,7 +64,7 @@ export default function Projects() {
               {proj.name === "Portable Gaming Unit" ? (
                 <a href={YOUTUBE_LINK} target="_blank">
                   <AiFillYoutube
-                    className="inline-block w-5 h-5 mx-4 mb-1 md:w-8 md:h-8"
+                    className="inline-block w-5 h-5 mx-4 mb-1 hover:text-red-600 md:w-8 md:h-8"
                     title="YouTube"
                   />
                 </a>
